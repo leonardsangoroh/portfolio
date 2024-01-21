@@ -8,7 +8,7 @@
 }
 
 body {
-    color: #ededed;
+    color: #DCF2F1;
 }
 
 .header {
@@ -26,14 +26,14 @@ body {
 
 .logo {
     font-size: 25px;
-    color: #ededed;
+    color: #DCF2F1;
     text-decoration: none;
     font-weight: 600;
 }
 
 .navbar a {
     font-size: 18px;
-    color: #ededed;
+    color: #DCF2F1;
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
@@ -41,10 +41,10 @@ body {
 }
 
 .navbar a:hover{
-    color: black;
+    color: #7FC7D9;
 } 
-.navbar a:active {
-    color: black;
+.navbar a.active {
+    color: #7FC7D9;
 }
 
 .home {
@@ -67,7 +67,7 @@ body {
 .home-content h3 {
     font-size: 32px;
     font-weight: 700;
-    color: aqua;
+    color: #7FC7D9;
 }
 
 .home-content p {
