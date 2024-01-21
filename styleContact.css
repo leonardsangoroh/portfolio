@@ -97,7 +97,7 @@ textarea {
     border-radius: 8px;
 }
 
-button {
+#submitButton {
     transition: .5s;
     position: relative;
     display: inline-flex;
