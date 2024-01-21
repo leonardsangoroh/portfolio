@@ -8,7 +8,6 @@
 }
 
 body {
-    background-color: rgb(13, 64, 110);
     color: #ededed;
 }
 
@@ -53,6 +52,9 @@ body {
     display: flex;
     align-items: center;
     padding: 0 10%;
+    background: url('home4.png') no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .home-content h1 {
