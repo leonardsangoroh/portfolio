@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins;wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: #ededed;
+    background-color: rgb(13, 64, 110);
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+.header {
+    top: 0;
+    left: 0;
+    padding: 10px;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    position:fixed
+}
+.logo {
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover{
+    color: black;
+} 
+.navbar a:active {
+    color: black;
+}
+
+h1 {
+    text-align: center;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.project {
+    width: 35%;
+    margin: 10px;
+    padding: 10px;
+    padding-top: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex; /* Added to enable flexbox */
+    flex-direction: column; /* To stack image and other content vertically */
+    align-items: center; /* To center items horizontally */
+}
+
+.project img {
+    width: 75%;
+    border-radius: 4px;
+    margin-bottom: -50px;
+    max-height: 800px;
+}
+
+.project-description {
+    text-align: justify;
+}
