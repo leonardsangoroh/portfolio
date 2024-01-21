@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins;wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: #ededed;
+    background-color: rgb(13, 64, 110);
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.header {
+    top: 0;
+    left: 0;
+    padding: 10px;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo {
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover{
+    color: black;
+} 
+.navbar a:active {
+    color: black;
+}
+
+.contact-container {
+    display: flex;
+    width: 70%;
+    margin-top: 10px;
+    margin-left: 15%;
+    margin-right:15%;
+}
+
+.contact-info,
+.contact-form {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.contact-info {
+    margin-top: 20px;
+    border: 2px solid #333; 
+    padding: 20px;
+    padding-left: 40px;
+    border-radius: 8px;
+}
+
+form {
+    margin-top: 20px;
+    border: 2px solid #333; 
+    padding: 20px;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 130px;
+}
+
+h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: aqua;
+    text-align: center;
+}

@@ -3,7 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleContact.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
     <title>Leonard Sangoroh</title>
 </head>
 <body>
@@ -17,5 +60,44 @@
             <a href="contact.html" class="active">Contact</a>
         </nav>
     </header>
+    <h1>Contact Me</h1>
+    <hr>
+
+    <div class="contact-container">
+        <div class="contact-info">
+            <h2>How to reach me</h2>
+            <hr>
+            <ul>
+                <br>
+                <li><p>Email: leonardsangoroh@gmail.com</p></li>
+                <br>
+                <li><p>Twitter: @l33v3rl3onard</p></li>
+                <br>
+                <li><p>Mastodon: @leonardsangoroh</p></li>
+                <br>
+                <li><p>Phone: +254 794 807 156</p></li>
+                <br>
+            </ul>    
+        </div>
+
+        <div class="contact-form">
+            <form action="" method="post">
+                <h3>
+                    Let's Talk
+                </h3>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required placeholder="Kindly share what you have in mind"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
 </body>
 </html>
