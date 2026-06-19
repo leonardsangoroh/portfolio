@@ -1,102 +1,114 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/styleContact.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-
-        h1 {
-            text-align: center;
-        }
-
-        .contact-info {
-            margin-top: 20px;
-        }
-
-        form {
-            margin-top: 20px;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        input, textarea {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 10px;
-            box-sizing: border-box;
-        }
-
-        button {
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        button:hover {
-            background-color: #45a049;
-        }
-    </style>
-    <title>Leonard Sangoroh</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact Lee Sangoroh for opportunities, projects, and collaborations.">
+  <title>Contact — Lee Sangoroh</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header class="header">
-        <a href="#" class="logo">Lee Sangoroh</a>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-        <nav class="navbar">
-            <a href="index.html" >Home</a>
-            <a href="about.html" >About</a>
-            <a href="project.html">Projects</a>
-            <a href="contact.html" class="active">Contact</a>
-        </nav>
-    </header>
-    <h1>Contact Me</h1>
-    <hr>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="logo" href="index.html" aria-label="Lee Sangoroh home">
+        <span class="logo-mark">LS</span>
+        <span>Lee Sangoroh</span>
+      </a>
+      <div class="nav-links" data-nav-links>
+        <a href="index.html">Home</a>
+        <a href="work.html">Work / Projects</a>
+        <a href="influences.html">Influences</a>
+        <a class="active" href="contact.html" aria-current="page">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="icon-button" type="button" data-theme-toggle aria-label="Toggle dark mode">🌙</button>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="Open navigation menu">☰</button>
+      </div>
+    </nav>
+  </header>
 
-    <div class="contact-container">
-        <div class="contact-info">
-            <h2>How to reach me</h2>
-            <hr>
-            <ul>
-                <br>
-                <li><p>Email: leonardsangoroh@gmail.com</p></li>
-                <br>
-                <li><p>Twitter: @l33v3rl3onard</p></li>
-                <br>
-                <li><p>Mastodon: @leonardsangoroh</p></li>
-                <br>
-                <li><p>Phone: +254 794 807 156</p></li>
-                <br>
-            </ul>    
-        </div>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Contact</span>
+        <h1>Let’s talk about opportunities, projects, or collaborations.</h1>
+        <p>
+          I’m open to graduate opportunities, junior developer roles, and conversations around iOS development, AI, automation, and practical software products.
+        </p>
+      </div>
+    </section>
 
-        <div class="contact-form">
-            <form action="" method="post">
-                <h3>
-                    Let's Talk
-                </h3>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required placeholder="Enter your name">
+    <section class="section compact">
+      <div class="container contact-layout">
+        <aside class="card">
+          <h2>Reach me directly</h2>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required placeholder="Enter your email">
+          <div class="contact-methods" style="margin-top: 1.5rem;">
+            <a class="contact-method" href="mailto:your.leonardsangoroh@gmail.com">
+              <span class="feature-icon" aria-hidden="true">@</span>
+              <div>
+                <strong>Email</strong>
+                <p>leonardsangoroh@gmail.com</p>
+              </div>
+            </a>
+            <a class="contact-method" href="https://www.linkedin.com/in/leonardsangoroh" target="_blank" rel="noreferrer">
+              <span class="feature-icon" aria-hidden="true">in</span>
+              <div>
+                <strong>LinkedIn</strong>
+                <p>linkedin.com/in/leonardsangoroh</p>
+              </div>
+            </a>
+            <a class="contact-method" href="https://github.com/leonardsangoroh" target="_blank" rel="noreferrer">
+              <span class="feature-icon" aria-hidden="true">GH</span>
+              <div>
+                <strong>GitHub</strong>
+                <p>github.com/leonardsangoroh</p>
+              </div>
+            </a>
+          </div>
+        </aside>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required placeholder="Kindly share what you have in mind"></textarea>
+        <section class="card" aria-labelledby="contact-form-title">
+          <h2 id="contact-form-title">Send a message</h2>
 
-                <button id="submitButton"type="submit">Submit</button>
-            </form>
-        </div>
+          <!-- TODO: Replace the action URL with your real form endpoint. Example: https://formspree.io/f/your-form-id -->
+          <form class="form" action="#" method="post" style="margin-top: 1.5rem;">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell me what you would like to discuss." required></textarea>
+            </div>
+            <button class="button primary" type="submit">Send message</button>
+          </form>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span data-year></span> Lee Sangoroh. Built with clarity and intention.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="work.html">Work</a>
+        <a href="influences.html">Influences</a>
+      </div>
     </div>
+  </footer>
 
+  <script src="js/main.js"></script>
 </body>
 </html>
